@@ -31,10 +31,24 @@ public class UsersResource {
     @Inject
     private UsersBean usersBean;
 
+    @Context
+    protected UriInfo uriInfo;
+
     @GET
     public Response getUsers() {
 
         List<User> users = usersBean.getUsers();
+
+        return Response.status(Response.Status.OK).entity(users).build();
+    }
+
+    @GET
+    @Path("/filtered")
+    public Response getUsersFiltered() {
+
+        List<User> users;
+
+        users = usersBean.getUsersFilter(uriInfo);
 
         return Response.status(Response.Status.OK).entity(users).build();
     }

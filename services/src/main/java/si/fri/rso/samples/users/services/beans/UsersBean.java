@@ -34,7 +34,15 @@ public class UsersBean {
         List<UserEntity> resultList = query.getResultList();
 
         return resultList.stream().map(UserConverter::toDto).collect(Collectors.toList());
+    }
 
+    public List<User> getUsersFilter(UriInfo uriInfo) {
+
+        QueryParameters queryParameters = QueryParameters.query(uriInfo.getRequestUri().getQuery()).defaultOffset(0)
+                .build();
+
+        return JPAUtils.queryEntities(em, UserEntity.class, queryParameters).stream()
+                .map(UserConverter::toDto).collect(Collectors.toList());
     }
 
     public User getUser(Integer id) {
