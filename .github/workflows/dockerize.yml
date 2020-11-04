@@ -35,4 +35,4 @@ jobs:
         with:
           file: ./Dockerfile_with_maven_build
           push: true
-          tags: frijugsincek/users:$${{ steps.time.outputs.time }}
+          tags: frijugsincek/users:${{ steps.time.outputs.time }}
