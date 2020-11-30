@@ -13,7 +13,7 @@ spec:
         app: users
     spec:
       containers:
-        - image: frijugsincek/users:latest
+        - image: frijugsincek/users:2020-11-30-18-39-40
           name: users
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
@@ -32,11 +32,7 @@ spec:
               port: server
             initialDelaySeconds: 20
             periodSeconds: 5
-          readinessProbe:
-            httpGet:
-              path: /health/ready
-              port: server
-            periodSeconds: 3
+
 ---
 
 
