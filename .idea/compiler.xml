@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="users-services" />
+        <module name="users-api" />
+        <module name="users-models" />
+        <module name="users-lib" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="users" target="8" />
+      <module name="users-api" target="8" />
+      <module name="users-lib" target="8" />
+      <module name="users-models" target="8" />
+      <module name="users-services" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
