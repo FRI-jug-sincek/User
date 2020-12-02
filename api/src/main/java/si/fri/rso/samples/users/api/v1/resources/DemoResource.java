@@ -35,7 +35,7 @@ public class DemoResource {
         String opis = "Aplikacija za iskanje cimrov v študentskih stanovanjih.";
         JSONArray mikrostoritve = new JSONArray();
         mikrostoritve.put("http://52.188.216.238:8080/v1/users");
-        mikrostoritve.put("http://52.188.216.238:8080/v1/users");
+        mikrostoritve.put("http://40.88.248.233:8080/v1/apartments");
         JSONArray githubi = new JSONArray();
         githubi.put("https://github.com/FRI-jug-sincek/Users");
         githubi.put("https://github.com/FRI-jug-sincek/Apartments");
