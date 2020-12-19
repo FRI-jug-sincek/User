@@ -13,7 +13,7 @@ spec:
         app: users
     spec:
       containers:
-        - image: frijugsincek/users:2020-12-19-18-37-00
+        - image: frijugsincek/users:2020-12-19-22-37-18
           name: users
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
@@ -37,9 +37,6 @@ spec:
               path: /health/ready
               port: server
             periodSeconds: 5
-
-
-
 
 ---
 
