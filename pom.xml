@@ -70,7 +70,16 @@
                 <artifactId>users-lib</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.kumuluz.ee.config</groupId>
+                <artifactId>kumuluzee-config-mp</artifactId>
+                <version>${kumuluzee-config-mp.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>kumuluzee-config-consul</artifactId>
+                <groupId>com.kumuluz.ee.config</groupId>
+                <version>${kumuluzee-config.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

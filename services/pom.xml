@@ -44,7 +44,6 @@
             <groupId>si.fri.rso.samples</groupId>
             <artifactId>users-models</artifactId>
         </dependency>
-
     </dependencies>
 
 </project>

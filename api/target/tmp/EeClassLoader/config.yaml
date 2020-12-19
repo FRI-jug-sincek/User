@@ -19,5 +19,9 @@ kumuluzee:
       data-source-health-check:
         type: liveness
         jndi-name: jdbc/UsersDS
-  rest-properties:
-    konfiguracijska-spremenljivka: false
+  config:
+    consul:
+      agent: http://40.88.21.225:80
+rest-properties:
+  maintenance-mode: false
+  broken: false

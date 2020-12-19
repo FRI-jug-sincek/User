@@ -14,9 +14,11 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
+import javax.ws.rs.ext.Provider;
 import java.util.List;
 import java.util.logging.Logger;
 
+import si.fri.rso.samples.users.config.RestProperties;
 import si.fri.rso.samples.users.lib.User;
 import si.fri.rso.samples.users.services.beans.UsersBean;
 
@@ -33,6 +35,9 @@ public class UsersResource {
 
     @Context
     protected UriInfo uriInfo;
+
+    @Inject
+    private RestProperties restProperties;
 
     @GET
     public Response getUsers() {
