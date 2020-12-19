@@ -25,6 +25,12 @@
             <groupId>si.fri.rso.samples</groupId>
             <artifactId>users-services</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.kumuluz.ee.health</groupId>
+            <artifactId>kumuluzee-health</artifactId>
+            <version>2.4.0</version>
+        </dependency>
     </dependencies>
 
     <build>
