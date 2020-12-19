@@ -19,6 +19,7 @@ kumuluzee:
       data-source-health-check:
         type: liveness
         jndi-name: jdbc/UsersDS
+
   config:
     consul:
       agent: http://40.88.21.225:80
