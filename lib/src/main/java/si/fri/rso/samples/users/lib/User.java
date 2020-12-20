@@ -7,7 +7,7 @@ public class User {
     private Integer userId;
     private String name;
     private String surname;
-    private Integer location;
+    private String location;
     private Integer age;
     private Instant created;
 
@@ -35,11 +35,11 @@ public class User {
         this.surname = surname;
     }
 
-    public Integer getLocation() {
+    public String getLocation() {
         return location;
     }
 
-    public void setLocation(Integer location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 

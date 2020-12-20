@@ -25,7 +25,8 @@ kumuluzee:
         url-pattern: /v1/users/*
   config:
     consul:
-      agent: http://40.88.21.225:80
+#      agent: http://40.88.21.225:80
+      agent: http://localhost:8500
 rest-properties:
   maintenance-mode: false
   broken: false

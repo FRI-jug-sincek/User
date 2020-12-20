@@ -26,7 +26,7 @@ public class UserEntity {
     private Integer age;
 
     @Column(name = "location")
-    private Integer location;
+    private String location;
 
     @Column(name = "created")
     private Instant created;
@@ -63,11 +63,11 @@ public class UserEntity {
         this.age = age;
     }
 
-    public Integer getLocation() {
+    public String getLocation() {
         return location;
     }
 
-    public void setLocation(Integer location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 
