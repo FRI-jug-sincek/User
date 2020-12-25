@@ -3,5 +3,6 @@ si/fri/rso/samples/users/api/v1/filters/BrokenFilter.class
 si/fri/rso/samples/users/api/v1/dtos/ApiError.class
 si/fri/rso/samples/users/api/v1/UsersApplication.class
 si/fri/rso/samples/users/api/v1/health/CustomReadyCheck.class
+si/fri/rso/samples/users/api/v1/health/CustomHealthCheckInternet.class
 si/fri/rso/samples/users/api/v1/health/CustomHealthCheck.class
 si/fri/rso/samples/users/api/v1/resources/UsersResource.class

@@ -2,13 +2,11 @@ package si.fri.rso.samples.users.api.v1.resources;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import si.fri.rso.samples.users.config.RestProperties;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -25,6 +23,9 @@ public class DemoResource {
 
     @Context
     protected UriInfo uriInfo;
+
+    @Inject
+    private RestProperties restProperties;
 
     @GET
     @Path("/info")
@@ -51,5 +52,14 @@ public class DemoResource {
                 .put("dockerhub", dockers)
                 .toString();
         return Response.status(Response.Status.OK).entity(jsonString).build();
+    }
+
+    @POST
+    @Path("break")
+    public Response makeBroken() {
+
+        restProperties.setBroken(true);
+
+        return Response.status(Response.Status.OK).build();
     }
 }

@@ -25,10 +25,10 @@ public class CustomReadyCheck implements HealthCheck {
 
         List<User> users = usersBean.getUsers();
 
-        if (!restProperties.getBroken()) {
+        if (!restProperties.getMaintenanceMode()) {
             return HealthCheckResponse.up(CustomReadyCheck.class.getSimpleName());
         } else {
-            return HealthCheckResponse.down(CustomHealthCheck.class.getSimpleName());
+            return HealthCheckResponse.down(CustomReadyCheck.class.getSimpleName());
         }
     }
 
