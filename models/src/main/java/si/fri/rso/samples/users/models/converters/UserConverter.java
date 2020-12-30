@@ -12,6 +12,7 @@ public class UserConverter {
         dto.setCreated(entity.getCreated());
         dto.setName(entity.getName());
         dto.setSurname(entity.getSurname());
+        dto.setEmail(entity.getEmail());
         dto.setAge(entity.getAge());
         dto.setLocation(entity.getLocation());
 
@@ -25,6 +26,7 @@ public class UserConverter {
         entity.setCreated(dto.getCreated());
         entity.setName(dto.getName());
         entity.setSurname(dto.getSurname());
+        entity.setEmail(dto.getEmail());
         entity.setAge(dto.getAge());
         entity.setLocation(dto.getLocation());
 

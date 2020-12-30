@@ -2,6 +2,7 @@ si/fri/rso/samples/users/api/v1/resources/DemoResource.class
 si/fri/rso/samples/users/api/v1/filters/BrokenFilter.class
 si/fri/rso/samples/users/api/v1/dtos/ApiError.class
 si/fri/rso/samples/users/api/v1/UsersApplication.class
+META-INF/services/javax.ws.rs.core.Application
 si/fri/rso/samples/users/api/v1/health/CustomReadyCheck.class
 si/fri/rso/samples/users/api/v1/health/CustomHealthCheckInternet.class
 si/fri/rso/samples/users/api/v1/health/CustomHealthCheck.class

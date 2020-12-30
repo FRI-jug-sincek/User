@@ -14,6 +14,11 @@ kumuluzee:
       password: postgres
       pool:
         max-size: 3
+  cors-filter:
+      servlet:
+        allow-origin: "http://localhost:4200"
+        allow-subdomains: true
+        supported-methods: "GET, POST, DELETE, HEAD, OPTIONS, PUT"
   health:
     checks:
       data-source-health-check:

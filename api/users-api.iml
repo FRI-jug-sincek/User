@@ -161,5 +161,8 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.26" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-jvm:4.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.4" level="project" />
+    <orderEntry type="library" name="Maven: com.kumuluz.ee.cors:kumuluzee-cors:1.0.6" level="project" />
+    <orderEntry type="library" name="Maven: com.thetransactioncompany:cors-filter:2.9" level="project" />
+    <orderEntry type="library" name="Maven: com.thetransactioncompany:java-property-utils:1.13" level="project" />
   </component>
 </module>
