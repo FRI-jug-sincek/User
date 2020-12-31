@@ -16,7 +16,7 @@ kumuluzee:
         max-size: 3
   cors-filter:
       servlet:
-        allow-origin: "http://localhost:4200"
+        allow-origin: "*"
         allow-subdomains: true
         supported-methods: "GET, POST, DELETE, HEAD, OPTIONS, PUT"
   health:
