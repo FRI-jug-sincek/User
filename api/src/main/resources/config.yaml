@@ -15,10 +15,10 @@ kumuluzee:
       pool:
         max-size: 3
   cors-filter:
-      servlet:
-        allow-origin: "*"
-        allow-subdomains: true
-        supported-methods: "GET, POST, DELETE, HEAD, OPTIONS, PUT"
+    servlet:
+      allow-origin: "*"
+      allow-subdomains: true
+      supported-methods: "GET, POST, DELETE, HEAD, OPTIONS, PUT"
   health:
     checks:
       data-source-health-check:

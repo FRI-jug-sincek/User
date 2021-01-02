@@ -13,7 +13,7 @@ spec:
         app: users
     spec:
       containers:
-        - image: frijugsincek/users:2020-12-19-18-01-04
+        - image: frijugsincek/users:2021-01-02-19-00-44
           name: users
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
