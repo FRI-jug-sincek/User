@@ -4,7 +4,7 @@ kumuluzee:
     name: dev
   version: 1.0.0
   server:
-    base-url: http://localhost:8081
+    base-url: http://localhost:8080
     http:
       port: 8080
   datasources:
@@ -16,7 +16,7 @@ kumuluzee:
         max-size: 3
   cors-filter:
       servlet:
-        allow-origin: "http://localhost:4200"
+        allow-origin: "*"
         allow-subdomains: true
         supported-methods: "GET, POST, DELETE, HEAD, OPTIONS, PUT"
   health:
@@ -30,8 +30,8 @@ kumuluzee:
         url-pattern: /v1/users/*
   config:
     consul:
-#      agent: http://40.88.21.225:80
-      agent: http://localhost:8500
+     agent: http://40.88.21.225:80
+      # agent: http://localhost:8500
 rest-properties:
   maintenance-mode: false
   broken: false

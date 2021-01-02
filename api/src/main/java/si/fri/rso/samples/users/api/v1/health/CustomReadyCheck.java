@@ -25,11 +25,11 @@ public class CustomReadyCheck implements HealthCheck {
 
         return HealthCheckResponse.up(CustomReadyCheck.class.getSimpleName());
 
-        if (!restProperties.getMaintenanceMode()) {
-            return HealthCheckResponse.up(CustomReadyCheck.class.getSimpleName());
-        } else {
-            return HealthCheckResponse.down(CustomReadyCheck.class.getSimpleName());
-        }
+        // if (!restProperties.getMaintenanceMode()) {
+        //     return HealthCheckResponse.up(CustomReadyCheck.class.getSimpleName());
+        // } else {
+        //     return HealthCheckResponse.down(CustomReadyCheck.class.getSimpleName());
+        // }
     }
 
 }
