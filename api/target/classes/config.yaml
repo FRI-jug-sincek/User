@@ -15,10 +15,10 @@ kumuluzee:
       pool:
         max-size: 3
   cors-filter:
-      servlet:
-        allow-origin: "*"
-        allow-subdomains: true
-        supported-methods: "GET, POST, DELETE, HEAD, OPTIONS, PUT"
+    servlet:
+      allow-origin: "*"
+      allow-subdomains: true
+      supported-methods: "GET, POST, DELETE, HEAD, OPTIONS, PUT"
   health:
     checks:
       data-source-health-check:
@@ -30,8 +30,8 @@ kumuluzee:
         url-pattern: /v1/users/*
   config:
     consul:
-     agent: http://40.88.21.225:80
-      # agent: http://localhost:8500
+    #  agent: http://40.88.21.225:80
+      agent: http://localhost:8500
 rest-properties:
   maintenance-mode: false
   broken: false
